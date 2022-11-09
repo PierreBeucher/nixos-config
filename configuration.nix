@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  boot.loaer.grub = {
+  boot.loader.grub = {
     enableCryptodisk = true;
     enable = true;
     version = 2;
