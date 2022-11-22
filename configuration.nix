@@ -4,19 +4,26 @@
 
 { config, pkgs, ... }:
 
+let
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz";
+in
 {
+
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      (import "${home-manager}/nixos")
     ];
 
+  nix.extraOptions = ''experimental-features = nix-command flakes''; 
+
   # Bootloader.
-  boot.loader.systemd-boot.enable = false;
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.grub = {
     enableCryptodisk = true;
-    enable = true;
+    enable = false;
     version = 2;
     device = "nodev";
     efiSupport = true;
@@ -103,14 +110,48 @@
     isNormalUser = true;
     description = "Pierre B";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
-    packages = with pkgs; [
+    shell = pkgs.zsh;
+  };
+
+  
+  home-manager.users.pbeucher = {
+    home.packages = with pkgs; [ 
       firefox
       git
       docker
       google-chrome
-      vscode
       kubectl
+
+      # VS Code
+      vscode
+      # nil # Nix lsp
     ];
+
+    
+    programs.zsh = {
+      enable = true;
+      shellAliases = {
+        # Git
+        gitpm = "(git checkout master || git checkout main) && git pull";
+        gitpd = "git chekout dev && git pull";
+        gitpf = "git push --force";
+        gitcb = "git checkout -b";
+        gitrbm = "git fetch && git rebase origin/master";
+        gitrbv = "git fetch && git rebase origin/dev";
+
+        # VS Code
+        c = "code .";
+
+        # BitWarden CLI 
+        # TODO
+
+        # Gitops (Nova)
+        g = "bwsession && make gitops";
+
+        # K8S
+        k = "kubectl";
+      };
+    };
   };
   
   virtualisation.docker = {
