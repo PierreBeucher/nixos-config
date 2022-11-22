@@ -2,6 +2,14 @@
 
 {
   enable = true;
+  
+  userSettings = {
+    "git.allowForcePush" = "true";
+    "nix.enableLanguageServer" = "true";
+    "nix.serverPath" = "nil";
+    "explorer.confirmDragAndDrop" = "false";
+  };
+
   extensions = with pkgs.vscode-extensions; [
     bbenoist.nix
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
