@@ -9,7 +9,7 @@ in
     (import "${home-manager}/nixos")
   ];
 
-  home-manager.users.demo = {
+  home-manager.users.pbeucher = {
 
     nixpkgs.config.allowUnfree = true;
 
@@ -20,6 +20,31 @@ in
       google-chrome
       kubectl
     ];
+
+    programs.zsh = {
+      enable = true;
+      shellAliases = {
+        # Git
+        gitpm = "(git checkout master || git checkout main) && git pull";
+        gitpd = "git chekout dev && git pull";
+        gitpf = "git push --force";
+        gitcb = "git checkout -b";
+        gitrbm = "git fetch && git rebase origin/master";
+        gitrbv = "git fetch && git rebase origin/dev";
+
+        # VS Code
+        c = "code .";
+
+        # BitWarden CLI 
+        # TODO
+
+        # Gitops (Nova)
+        g = "bwsession && make gitops";
+
+        # K8S
+        k = "kubectl";
+      };
+    };
 
     programs.vscode = {
       enable = true;
