@@ -60,8 +60,10 @@
     #media-session.enable = true;
   };
 
-
-
   nixpkgs.config.allowUnfree = true;
+  
+  environment.systemPackages = [
+    pkgs.spotify
+  ];
   
 }
