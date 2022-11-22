@@ -11,15 +11,38 @@
         version = "3.57.1";
         sha256 = "sha256-zdhhH8ebSq6e+Y9kL+v0Br3lao0ZSEbXxCK9pw2tSFM=";
     }
+    {
+        name = "git-graph";
+        publisher = "mhutchie";
+        version = "1.30.0";
+        sha256 = "sha256-sHeaMMr5hmQ0kAFZxxMiRk6f0mfjkg2XMnA4Gf+DHwA=";
+    }
+    {
+        name = "vsliveshare";
+        publisher = "ms-vsliveshare";
+        version = "1.0.5776";
+        sha256 = "sha256-BamhVT1fmgpDKhoBTYdwIvuWUbHzF363WnKLz2ql3Lo=";
+    }
+    {
+        name = "vscode-typescript-next";
+        publisher = "ms-vscode";
+        version = "5.0.202211170";
+        sha256 = "sha256-Jy7ssTYrVq8s596Vj132jf4JOzEhZL8y45ARsADGgsE=";
+    }
+    {
+        name = "rust-analyzer";
+        publisher = "rust-lang";
+        version = "0.4.1294";
+        sha256 = "sha256-goxwh5tRlkzCQaI6latNZbUZi2p/u/bSGx/exK1OTRU=";
+    }
+    {
+        name = "markdown-preview-enhanced";
+        publisher = "shd101wyy";
+        version = "0.6.5";
+        sha256 = "sha256-Aw41V1hCZ3reZRptfqFDdBef9spHjkfMngVotF2ptek=";
+    }
   ];
-    /*
-    mhutchie.git-graph
-    eamodio.gitlens
-    hashicorp.terraform
-    yzhang.markdown-all-in-one
-    rust-lang.rust-analyzer
-    redhat.vscode-yaml
-    */
+  
   keybindings = [
     {
         key = "ctrl+shift+k";
