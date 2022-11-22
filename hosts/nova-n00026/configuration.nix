@@ -53,46 +53,6 @@ in
     shell = pkgs.zsh;
   };
 
-  home-manager.users.pbeucher = {
-    home.packages = with pkgs; [ 
-      firefox
-      git
-      docker
-      google-chrome
-      kubectl
-
-      # VS Code
-      vscode
-      # nil # Nix lsp
-    ];
-
-    
-    programs.zsh = {
-      enable = true;
-      shellAliases = {
-        # Git
-        gitpm = "(git checkout master || git checkout main) && git pull";
-        gitpd = "git chekout dev && git pull";
-        gitpf = "git push --force";
-        gitcb = "git checkout -b";
-        gitrbm = "git fetch && git rebase origin/master";
-        gitrbv = "git fetch && git rebase origin/dev";
-
-        # VS Code
-        c = "code .";
-
-        # BitWarden CLI 
-        # TODO
-
-        # Gitops (Nova)
-        g = "bwsession && make gitops";
-
-        # K8S
-        k = "kubectl";
-      };
-    };
-  };
-
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
