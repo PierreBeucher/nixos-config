@@ -23,39 +23,7 @@ in
     ];
 
     programs.zsh = import ./zsh.nix;
-
-    programs.vscode = {
-      enable = true;
-      extensions = with pkgs.vscode-extensions; [
-        bbenoist.nix
-      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-        {
-            name = "gitlab-workflow";
-            publisher = "GitLab";
-            version = "3.57.1";
-            sha256 = "sha256-zdhhH8ebSq6e+Y9kL+v0Br3lao0ZSEbXxCK9pw2tSFM=";
-        }
-      ];
-        /*
-        mhutchie.git-graph
-        eamodio.gitlens
-        hashicorp.terraform
-        yzhang.markdown-all-in-one
-        rust-lang.rust-analyzer
-        redhat.vscode-yaml
-        */
-      keybindings = [
-        {
-          key = "ctrl+[Slash]";
-          command = "workbench.action.terminal.focus";
-        }
-        {
-          key = "ctrl+[Slash]";
-          command = "workbench.action.focusActiveEditorGroup";
-          when = "terminalFocus";
-        }
-      ];
-    };
+    programs.vscode = import ./vscode.nix { pkgs = pkgs; };
   };
 
 }
