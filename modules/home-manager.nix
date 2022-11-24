@@ -18,12 +18,18 @@ in
       firefox
       git
       docker
-      google-chrome
       kubectl
     ];
 
     programs.zsh = import ./zsh.nix;
     programs.vscode = import ./vscode.nix { pkgs = pkgs; };
+
+    programs.chromium = {
+      enable = true;
+      extensions = [
+        { id = "nngceckbapebfimnlniiiahkandclblb"; }
+      ];
+    };
   };
 
 }
