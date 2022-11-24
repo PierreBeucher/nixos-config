@@ -23,13 +23,6 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  boot.loader.grub = {
-    enableCryptodisk = true;
-    enable = false;
-    version = 2;
-    device = "nodev";
-    efiSupport = true;
-  };
 
   # Setup keyfile
   boot.initrd.secrets = {
@@ -37,8 +30,8 @@ in
   };
 
   # Enable swap on luks
-  boot.initrd.luks.devices."luks-e76aeb4c-1b4d-481f-a1ea-22db9dc2c37b".device = "/dev/disk/by-uuid/e76aeb4c-1b4d-481f-a1ea-22db9dc2c37b";
-  boot.initrd.luks.devices."luks-e76aeb4c-1b4d-481f-a1ea-22db9dc2c37b".keyFile = "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-e7d867d7-5c49-47f5-a05a-eedb7ef0366a".device = "/dev/disk/by-uuid/e7d867d7-5c49-47f5-a05a-eedb7ef0366a";
+  boot.initrd.luks.devices."luks-e7d867d7-5c49-47f5-a05a-eedb7ef0366a".keyFile = "/crypto_keyfile.bin";
 
   networking.hostName = "n00026"; # Define your hostname.
 
