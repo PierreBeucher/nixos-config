@@ -19,6 +19,9 @@
     gitrbm = "git fetch && git rebase origin/master";
     gitrbv = "git fetch && git rebase origin/dev";
     
+    # Nix
+    noxb = "nixos-rebuild build";
+    noxs = "nixos-rebuild switch";
 
     # VS Code
     c = "code .";
