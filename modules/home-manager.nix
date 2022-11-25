@@ -19,6 +19,8 @@ in
       git
       docker
       kubectl
+      nodejs
+      nodePackages.pnpm
     ];
 
     programs.zsh = import ./zsh.nix;
