@@ -76,6 +76,7 @@
   environment.systemPackages = [
     pkgs.spotify
     pkgs.awscli2
+    pkgs.k9s
   ];
   
 }
