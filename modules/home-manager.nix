@@ -36,7 +36,8 @@ in
     programs.chromium = {
       enable = true;
       extensions = [
-        { id = "nngceckbapebfimnlniiiahkandclblb"; }
+        { id = "nngceckbapebfimnlniiiahkandclblb"; } # BitWarden
+        { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # uBlock Origin
       ];
     };
   };
