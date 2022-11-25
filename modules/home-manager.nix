@@ -29,6 +29,8 @@ in
     #   enable = true;
     # };
 
+    programs.terminator.enable = true;
+
     programs.chromium = {
       enable = true;
       extensions = [
