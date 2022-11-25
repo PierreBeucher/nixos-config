@@ -20,8 +20,9 @@
     gitrbv = "git fetch && git rebase origin/dev";
     
     # Nix
-    noxb = "nixos-rebuild build";
-    noxs = "nixos-rebuild switch";
+    noxb = "sudo nixos-rebuild build";
+    noxs = "sudo nixos-rebuild switch";
+    noxt = "sudo nixos-rebuild test";
 
     # VS Code
     c = "code .";

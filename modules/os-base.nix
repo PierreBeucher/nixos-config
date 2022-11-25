@@ -60,6 +60,17 @@
     #media-session.enable = true;
   };
 
+  # Allow passwordless sudo
+  security.sudo.extraRules= [
+    {  users = [ "pbeucher" ];
+      commands = [
+        { command = "ALL" ;
+          options= [ "NOPASSWD" ]; # "SETENV" # Adding the following could be a good idea
+        }
+      ];
+    }
+  ];
+
   nixpkgs.config.allowUnfree = true;
   
   environment.systemPackages = [
