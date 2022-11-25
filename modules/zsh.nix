@@ -27,10 +27,14 @@
     # VS Code
     c = "code .";
 
-    # BitWarden CLI 
-    # TODO
+    # BitWarden Session handling
+    # Creates $XDG_RUNTIME_DIR/bwsession with BitWarden session key if it does not already exists
+    # This is reasonably safe as it's user namespaced and cleaned on logout
+    # Then export file content as BW_SESSION
+    bwsession="[ -f $XDG_RUNTIME_DIR/bwsession ] || (BW_SESSION=$(bw unlock --raw) && echo $BW_SESSION > $XDG_RUNTIME_DIR/bwsession) && export BW_SESSION=$(cat $XDG_RUNTIME_DIR/bwsession)";
+    bwclean="rm $XDG_RUNTIME_DIR/bwsession";
 
-    # Gitops (Nova)
+    # Run Gitops
     g = "bwsession && make gitops";
   };
 

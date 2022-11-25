@@ -73,11 +73,20 @@
 
   nixpkgs.config.allowUnfree = true;
   
-  environment.systemPackages = [
-    pkgs.spotify
-    pkgs.awscli2
-    pkgs.k9s
-    pkgs.gnupg
+  environment.systemPackages = with pkgs; [
+    spotify
+    awscli2
+    k9s
+    gnupg
+    bitwarden-cli
+    gnumake
+    docker-compose  
   ];
+
+  # Docker
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = true;
+  };
   
 }
