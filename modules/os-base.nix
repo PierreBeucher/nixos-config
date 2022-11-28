@@ -78,7 +78,6 @@
     awscli2
     k9s
     gnupg
-    bitwarden-cli
     gnumake
     docker-compose  
   ];
