@@ -21,6 +21,7 @@ in
       kubectl
       nodejs
       nodePackages.pnpm
+      dbeaver
     ];
 
     programs.zsh = import ./zsh.nix;
