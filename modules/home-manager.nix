@@ -22,6 +22,7 @@ in
       nodejs
       nodePackages.pnpm
       dbeaver
+      sshuttle
     ];
 
     programs.zsh = import ./zsh.nix;

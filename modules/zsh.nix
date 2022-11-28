@@ -27,7 +27,6 @@
     # VS Code
     c = "code .";
 
-
     # BitWarden
     # Force use bitwarden 2022.9.0 with npx
     bw="npx @bitwarden/cli@2022.9.0";
@@ -41,6 +40,9 @@
 
     # Run Gitops
     g = "bwsession && make gitops";
+
+    # Nova Sshuttle
+    ss = "sshuttle -r pierre.beucher@prod-sshuttle.k8s.jinko.ai 0.0.0.0/0 --python=python3";
   };
 
 
