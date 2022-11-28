@@ -39,6 +39,7 @@ in
       extensions = [
         { id = "nngceckbapebfimnlniiiahkandclblb"; } # BitWarden
         { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # uBlock Origin
+        { id = "megbklhjamjbcafknkgmokldgolkdfig"; } # SessionBox 
       ];
     };
   };
