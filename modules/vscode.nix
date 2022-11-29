@@ -8,6 +8,8 @@
     "nix.enableLanguageServer" = "true";
     "nix.serverPath" = "nil";
     "explorer.confirmDragAndDrop" = "false";
+    "git.useEditorAsCommitInput" = "false";
+    "terminal.integrated.enableMultiLinePasteWarning" = "false";
   };
 
   extensions = with pkgs.vscode-extensions; [
