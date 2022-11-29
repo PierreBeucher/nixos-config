@@ -42,7 +42,7 @@
     g = "bwsession && make gitops";
 
     # Nova Sshuttle
-    ss = "sshuttle -r pierre.beucher@prod-sshuttle.k8s.jinko.ai 0.0.0.0/0 --python=python3";
+    sst = "sshuttle -r pierre.beucher@prod-sshuttle.k8s.jinko.ai 0.0.0.0/0 --python=python3";
 
     # Kubernetes
     ks = "k9s";
