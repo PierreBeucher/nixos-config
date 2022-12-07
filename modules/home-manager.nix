@@ -25,6 +25,7 @@ in
       sshuttle
     ];
 
+    programs.bash.enable = true;
     programs.zsh = import ./zsh.nix;
     programs.vscode = import ./vscode.nix { pkgs = pkgs; };
 
