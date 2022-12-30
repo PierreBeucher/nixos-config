@@ -80,6 +80,7 @@
     gnupg
     gnumake
     docker-compose  
+    htop
   ];
 
   # Docker
