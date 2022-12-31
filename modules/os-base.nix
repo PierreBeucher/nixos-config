@@ -81,6 +81,7 @@
     gnumake
     docker-compose  
     htop
+    vlc
   ];
 
   programs.steam = {
