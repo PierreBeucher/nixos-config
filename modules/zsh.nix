@@ -24,6 +24,10 @@
     noxs = "sudo nixos-rebuild switch";
     noxt = "sudo nixos-rebuild test";
 
+    nixb = "sudo nixos-rebuild build";
+    nixbs = "sudo nixos-rebuild switch";
+    nixbt = "sudo nixos-rebuild test";
+
     # VS Code
     c = "code .";
 
