@@ -14,6 +14,7 @@
 
   extensions = with pkgs.vscode-extensions; [
     bbenoist.nix
+    matklad.rust-analyzer
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
@@ -38,12 +39,6 @@
         publisher = "ms-vscode";
         version = "5.0.202211170";
         sha256 = "sha256-Jy7ssTYrVq8s596Vj132jf4JOzEhZL8y45ARsADGgsE=";
-    }
-    {
-        name = "rust-analyzer";
-        publisher = "rust-lang";
-        version = "0.4.1294";
-        sha256 = "sha256-4r3QhfkME4QEV+NaSFQDO/saQEMnOV5d5E0w5zdr/vY=";
     }
     {
         name = "markdown-preview-enhanced";

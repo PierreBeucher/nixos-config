@@ -82,6 +82,12 @@
     docker-compose  
     htop
     vlc
+    
+    # Rust and deps
+    rustup
+    musl
+    gcc
+    rust-analyzer
   ];
 
   programs.steam = {
