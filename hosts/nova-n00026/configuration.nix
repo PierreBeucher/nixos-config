@@ -14,6 +14,7 @@ in
       ./hardware-configuration.nix
       ../../modules/os-base.nix
       ../../modules/home-manager.nix
+      ../../modules/openvpn.nix
       # (import "${home-manager}/nixos")
     ];
 
