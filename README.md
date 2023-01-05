@@ -33,3 +33,7 @@ sudo nixos-rebuild switch
   ```
 - `chmod 0600 ~/.openvpn/*`
 - Add import `../../modules/openvpn.nix`
+
+```sh
+sudo systemctl status openvpn-expressvpn.service
+```
