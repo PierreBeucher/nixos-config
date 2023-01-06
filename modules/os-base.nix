@@ -82,6 +82,7 @@
     docker-compose  
     htop
     vlc
+    unzip
     
     # network tools
     bind 
