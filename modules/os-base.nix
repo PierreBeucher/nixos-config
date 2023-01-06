@@ -83,6 +83,10 @@
     htop
     vlc
     
+    # network tools
+    bind 
+    traceroute
+
     # Rust and deps
     rustup
     musl
