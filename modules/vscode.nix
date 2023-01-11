@@ -41,6 +41,12 @@
         sha256 = "sha256-Jy7ssTYrVq8s596Vj132jf4JOzEhZL8y45ARsADGgsE=";
     }
     {
+        name = "prettify-json";
+        publisher = "mohsen1";
+        version = "0.0.3";
+        sha256 = "sha256-lvds+lFDzt1s6RikhrnAKJipRHU+Dk85ZO49d1sA8uo=";
+    }
+    {
         name = "markdown-preview-enhanced";
         publisher = "shd101wyy";
         version = "0.6.5";
