@@ -75,6 +75,8 @@
   
   environment.systemPackages = with pkgs; [
     spotify
+
+    # Various dev tooling
     awscli2
     k9s
     gnupg
@@ -83,6 +85,8 @@
     htop
     vlc
     unzip
+    nixos-generators
+    pulumi
     
     # network tools
     bind 
