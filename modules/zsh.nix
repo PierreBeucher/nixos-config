@@ -14,7 +14,7 @@
     # Git
     # If main exists, use main, otherwise use master
     gitpm = "if [[ $(git rev-parse --verify main 2> /dev/null) ]]; then git checkout main; else git checkout master; fi && git pull";
-    gitpd = "git chekout dev && git pull";
+    gitpd = "git checkout dev && git pull";
     gitpf = "git push --force";
     gitcb = "git checkout -b";
     gitrbm = "git fetch && if [[ $(git rev-parse --verify origin/main 2> /dev/null) ]]; then git rebase origin/main; else git rebase origin/master; fi";
