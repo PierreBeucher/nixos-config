@@ -19,6 +19,13 @@
     gitcb = "git checkout -b";
     gitrbm = "git fetch && if [[ $(git rev-parse --verify origin/main 2> /dev/null) ]]; then git rebase origin/main; else git rebase origin/master; fi";
     gitrbv = "git fetch && git rebase origin/dev";
+
+    # Docker
+    docker-cleanup = "docker stop $(docker ps -aq) && docker rm $(docker ps -aq)";
+    docker-cleanup-hard = "docker stop $(docker ps -aq) && \ 
+      docker rm $(docker ps -aq) && \
+      docker volume rm $(docker volume ls -q) && \
+      docker network rm $(docker network ls -q)";
     
     # Nix
     noxb = "sudo nixos-rebuild build";
