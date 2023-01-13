@@ -15,6 +15,7 @@
   extensions = with pkgs.vscode-extensions; [
     bbenoist.nix
     matklad.rust-analyzer
+    hashicorp.terraform
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
