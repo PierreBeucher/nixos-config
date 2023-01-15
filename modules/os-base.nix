@@ -88,6 +88,8 @@
     nixos-generators
     pulumi
     terraform
+    pkg-config
+    openssl
     
     # network tools
     bind 
