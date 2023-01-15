@@ -87,6 +87,7 @@
     unzip
     nixos-generators
     pulumi
+    terraform
     
     # network tools
     bind 
