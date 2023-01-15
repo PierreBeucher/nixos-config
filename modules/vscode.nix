@@ -16,6 +16,7 @@
     bbenoist.nix
     matklad.rust-analyzer
     hashicorp.terraform
+    yzhang.markdown-all-in-one
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
