@@ -23,6 +23,7 @@ in
       nodePackages.pnpm
       dbeaver
       sshuttle
+      azure-cli
     ];
 
     programs.bash.enable = true;
