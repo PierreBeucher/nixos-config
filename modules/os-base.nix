@@ -90,6 +90,7 @@
     terraform
     pkg-config
     openssl
+    sops
     
     # network tools
     bind 
