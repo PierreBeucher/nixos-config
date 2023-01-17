@@ -17,6 +17,8 @@
     matklad.rust-analyzer
     hashicorp.terraform
     yzhang.markdown-all-in-one
+    redhat.vscode-yaml
+    gitlab.gitlab-workflow
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
