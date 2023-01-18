@@ -91,6 +91,7 @@
     pkg-config
     openssl
     sops
+    jq
     
     # network tools
     bind 
