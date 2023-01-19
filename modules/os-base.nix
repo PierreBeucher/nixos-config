@@ -92,6 +92,7 @@
     openssl
     sops
     jq
+    ansible
     
     # network tools
     bind 
