@@ -72,6 +72,9 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+
+  # Enable commands like nix develop
+  nix.settings.experimental-features = "nix-command flakes";
   
   environment.systemPackages = with pkgs; [
     spotify
