@@ -40,8 +40,8 @@
     c = "code .";
 
     # BitWarden
-    # Force use bitwarden 2022.9.0 with npx
-    bw="npx @bitwarden/cli@2022.9.0";
+    # Force use bitwarden with npx
+    bw="npx @bitwarden/cli@2023.1.0";
 
     # Creates $XDG_RUNTIME_DIR/bwsession with BitWarden session key if it does not already exists
     # This is reasonably safe as it's user namespaced and cleaned on logout
