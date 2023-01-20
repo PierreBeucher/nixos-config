@@ -60,7 +60,7 @@
     ks = "k9s";
 
     # Use with modules/openvpn.nix
-    vpnoff = "sudo systemctl stop openvpn-expressvpn.service";
+    vpnstop = "sudo systemctl stop openvpn-expressvpn.service";
     vpnstart = "sudo systemctl restart openvpn-expressvpn.service";
     vpnstatus = "sudo systemctl status openvpn-expressvpn.service";
 
