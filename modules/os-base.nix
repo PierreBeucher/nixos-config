@@ -122,9 +122,9 @@
 
   # VirtualBox
   virtualisation.virtualbox = {
-    host.enable = true;
-    guest.enable = true;
-    guest.x11 = true;
+    host.enable = false;
+    guest.enable = false;
+    guest.x11 = false;
   };
   users.extraGroups.vboxusers.members = [ "pbeucher" ];
 
