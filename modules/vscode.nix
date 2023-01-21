@@ -19,6 +19,7 @@
     yzhang.markdown-all-in-one
     redhat.vscode-yaml
     gitlab.gitlab-workflow
+    streetsidesoftware.code-spell-checker
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
@@ -187,6 +188,11 @@
     {
         key = "ctrl+[Slash]";
         command = "workbench.action.terminal.focus";
+        when = "!terminalFocus";
+    }
+    {
+        command = "cSpell.addWordToWorkspaceDictionary";
+        key = "ctrl+shift+D";
         when = "!terminalFocus";
     }
   ];
