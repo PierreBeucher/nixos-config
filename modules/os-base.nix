@@ -96,6 +96,8 @@
     sops
     jq
     ansible
+    pciutils
+    dive
     
     # network tools
     bind 
