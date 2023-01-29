@@ -106,6 +106,7 @@
     musl
     gcc
     rust-analyzer
+    dive
   ];
 
   programs.steam = {
