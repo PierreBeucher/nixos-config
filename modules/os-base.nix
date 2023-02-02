@@ -109,6 +109,8 @@
     gcc
     rust-analyzer
     dive
+  ] ++ [ # Flakes
+    (builtins.getFlake "github:novadiscovery/novops/dcc09032a8f07a92e5477be7f913e88435224d67").packages.x86_64-linux.novops
   ];
 
   programs.steam = {
