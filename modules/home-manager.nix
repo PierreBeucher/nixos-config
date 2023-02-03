@@ -30,6 +30,15 @@ in
     programs.zsh = import ./zsh.nix;
     programs.vscode = import ./vscode.nix { pkgs = pkgs; };
 
+    programs.ssh = {
+      enable = true;
+      extraConfig = ''
+      Host localhost
+        StrictHostKeyChecking no
+        UserKnownHostsFile=/dev/null
+      '';
+    };
+
     # Not yet on Home Manager 22.05
     # programs.k9s = {
     #   enable = true;
