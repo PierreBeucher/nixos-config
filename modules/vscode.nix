@@ -20,6 +20,7 @@
     redhat.vscode-yaml
     gitlab.gitlab-workflow
     streetsidesoftware.code-spell-checker
+    bungcip.better-toml
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitlab-workflow";
