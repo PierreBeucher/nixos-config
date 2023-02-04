@@ -35,7 +35,7 @@ in
       extraConfig = ''
       Host localhost
         StrictHostKeyChecking no
-        UserKnownHostsFile=/dev/null
+        UserKnownHostsFile /dev/null
       '';
     };
 
