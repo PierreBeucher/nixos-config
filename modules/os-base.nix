@@ -98,6 +98,7 @@
     ansible
     pciutils
     dive
+    gitlab-runner
     
     # network tools
     bind 
