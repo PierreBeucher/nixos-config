@@ -81,6 +81,7 @@
 
     # Various dev tooling
     awscli2
+    ssm-session-manager-plugin
     k9s
     gnupg
     gnumake
@@ -103,6 +104,7 @@
     # network tools
     bind 
     traceroute
+    tor-browser-bundle-bin
 
     # Rust and deps
     rustup
