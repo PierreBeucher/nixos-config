@@ -27,6 +27,8 @@
       docker volume rm $(docker volume ls -q) && \
       docker network rm $(docker network ls -q)";
     
+    dcr = "docker compose down -v && docker compose up -d";
+    
     # Nix
     noxb = "sudo nixos-rebuild build";
     noxs = "sudo nixos-rebuild switch";
