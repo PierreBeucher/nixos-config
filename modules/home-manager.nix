@@ -24,6 +24,7 @@ in
       dbeaver
       sshuttle
       azure-cli
+      logseq
     ];
 
     programs.bash.enable = true;
