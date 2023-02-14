@@ -38,6 +38,8 @@
     nixbs = "sudo nixos-rebuild switch";
     nixbt = "sudo nixos-rebuild test";
 
+    nd = "nix develop";
+
     # VS Code
     c = "code .";
 
@@ -54,6 +56,7 @@
 
     # Run Gitops
     g = "bwsession && make gitops";
+    ng = "bwsession && nix develop";
 
     # Nova Sshuttle
     sst = "sshuttle -r pierre.beucher@prod-sshuttle.k8s.jinko.ai 0.0.0.0/0 --python=python3";
