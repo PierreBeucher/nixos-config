@@ -19,7 +19,7 @@
     yzhang.markdown-all-in-one
     redhat.vscode-yaml
     gitlab.gitlab-workflow
-    streetsidesoftware.code-spell-checker
+    # streetsidesoftware.code-spell-checker # removed as it causes too much noise
     bungcip.better-toml
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
