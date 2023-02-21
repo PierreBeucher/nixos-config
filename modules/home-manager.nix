@@ -15,7 +15,6 @@ in
     nixpkgs.config.allowUnfree = true;
 
     home.packages = with pkgs; [
-      firefox
       git
       docker
       kubectl
@@ -25,6 +24,7 @@ in
       sshuttle
       azure-cli
       logseq
+      # teams
     ];
 
     programs.bash.enable = true;
