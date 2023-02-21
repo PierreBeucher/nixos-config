@@ -69,6 +69,9 @@
     vpnstart = "sudo systemctl restart openvpn-expressvpn.service";
     vpnstatus = "sudo systemctl status openvpn-expressvpn.service";
 
+    # Reset DNS cache
+    resetdns = "sudo systemctl restart nscd.service";
+
   };
 
 
