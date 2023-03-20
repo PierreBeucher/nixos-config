@@ -37,6 +37,10 @@ in
       Host localhost
         StrictHostKeyChecking no
         UserKnownHostsFile /dev/null
+      
+      Host *.training.crafteo.io
+        StrictHostKeyChecking no
+        UserKnownHostsFile /dev/null
       '';
     };
 
