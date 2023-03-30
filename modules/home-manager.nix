@@ -25,6 +25,7 @@ in
       sshuttle
       azure-cli
       logseq
+      kubernetes-helm
     ];
 
     programs.bash.enable = true;
