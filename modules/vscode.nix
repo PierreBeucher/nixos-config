@@ -23,6 +23,12 @@
     bungcip.better-toml
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
+        name = "gitblame";
+        publisher = "waderyan";
+        version = "9.0.1";
+        sha256 = "sha256-NA3qHeMEPfxcQC/TV1cnlDGX+oYc2wV+gXKu6oSZNiY=";
+    }
+    {
         name = "gitlab-workflow";
         publisher = "GitLab";
         version = "3.57.1";
