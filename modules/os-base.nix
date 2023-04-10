@@ -136,4 +136,9 @@
   };
   users.extraGroups.vboxusers.members = [ "pbeucher" ];
 
+  # Enable printer
+  services.printing.enable = true;
+  services.avahi.enable = true;
+  services.avahi.nssmdns = true;
+
 }
