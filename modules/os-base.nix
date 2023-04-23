@@ -87,7 +87,6 @@
     gnumake
     docker-compose  
     htop
-    vlc
     unzip
     nixos-generators
     pulumi
@@ -100,6 +99,10 @@
     pciutils
     dive
     gitlab-runner
+
+    # Programs
+    transmission-qt
+    vlc
     
     # network tools
     bind 
