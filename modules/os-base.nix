@@ -99,6 +99,7 @@
     pciutils
     dive
     gitlab-runner
+    debootstrap
 
     # Programs
     transmission-qt
