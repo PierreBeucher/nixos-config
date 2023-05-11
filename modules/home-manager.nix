@@ -34,15 +34,22 @@ in
 
     programs.ssh = {
       enable = true;
-      extraConfig = ''
-      Host localhost
-        StrictHostKeyChecking no
-        UserKnownHostsFile /dev/null
-      
-      Host *.training.crafteo.io
-        StrictHostKeyChecking no
-        UserKnownHostsFile /dev/null
-      '';
+      matchBlocks = {
+        "localhost" = {
+          # hostname = "localhost";
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+        "*.training.crafteo.io" = {
+          # hostname = "*.training.crafteo.io";
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+      };        
     };
 
     # Not yet on Home Manager 22.05
