@@ -27,6 +27,9 @@
     LC_TIME = "fr_FR.utf8";
   };
 
+  # Enable NTFS support
+  boot.supportedFilesystems = [ "ntfs" ];
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
