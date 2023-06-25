@@ -30,7 +30,7 @@ in
 
     home.sessionVariables = {
       EDITOR = "nano";
-    }
+    };
 
     programs.bash.enable = true;
     programs.zsh = import ./zsh.nix;
