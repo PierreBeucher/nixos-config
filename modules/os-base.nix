@@ -88,7 +88,8 @@
     k9s
     gnupg
     gnumake
-    docker-compose  
+    docker-compose 
+    buildah 
     htop
     unzip
     nixos-generators
@@ -127,6 +128,9 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
+  # Common containers setup
+  virtualisation.containers.enable = true;
+  
   # Docker
   virtualisation.docker = {
     enable = true;
