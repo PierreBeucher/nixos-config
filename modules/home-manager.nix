@@ -47,7 +47,16 @@ in
             UserKnownHostsFile = "/dev/null";
           };
         };
+        
         "*.training.crafteo.io" = {
+          # hostname = "*.training.crafteo.io";
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+
+        "dev.blog.crafteo.io" = {
           # hostname = "*.training.crafteo.io";
           extraOptions = {
             StrictHostKeyChecking = "no";
