@@ -108,6 +108,7 @@
     # Programs
     transmission-qt
     vlc
+    libsForQt5.kolourpaint
     
     # network tools
     bind 
