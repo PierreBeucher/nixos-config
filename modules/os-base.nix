@@ -132,10 +132,14 @@
   # Common containers setup
   virtualisation.containers.enable = true;
   
-  # Docker
+  # Docker & Podman
   virtualisation.docker = {
     enable = true;
     enableOnBoot = true;
+  };
+
+  virtualisation.podman = {
+      enable = true;
   };
 
   # VirtualBox
