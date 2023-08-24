@@ -4,12 +4,25 @@
   enable = true;
   
   userSettings = {
+    # Git
     "git.allowForcePush" = "true";
+    "git.useEditorAsCommitInput" = "false";
+
+    # Nix
     "nix.enableLanguageServer" = "true";
     "nix.serverPath" = "nil";
     "explorer.confirmDragAndDrop" = "false";
-    "git.useEditorAsCommitInput" = "false";
+    
+    # Terminal
     "terminal.integrated.enableMultiLinePasteWarning" = "false";
+    
+    # yzhang.markdown-all-in-one
+    "markdown.extension.toc.levels" =  "2..6";
+
+    # streetsidesoftware.code-spell-checker
+    "cSpell.userWords" = [
+        "pulumi"    
+    ];
   };
 
   extensions = with pkgs.vscode-extensions; [
