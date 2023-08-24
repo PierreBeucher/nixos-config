@@ -21,7 +21,10 @@
 
     # streetsidesoftware.code-spell-checker
     "cSpell.userWords" = [
-        "pulumi"    
+        "pulumi" 
+        "novops"
+        "hvault"
+        "hashicorp"
     ];
   };
 
