@@ -88,7 +88,8 @@
     k9s
     gnupg
     gnumake
-    docker-compose 
+    docker-compose
+    podman-compose
     buildah 
     htop
     unzip
