@@ -74,7 +74,4 @@
 
   };
 
-  initExtra = ''
-    eval "$(direnv hook zsh)"
-  '';
 }

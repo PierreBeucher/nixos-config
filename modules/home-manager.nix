@@ -26,7 +26,6 @@ in
       azure-cli
       logseq
       kubernetes-helm
-      direnv
     ];
 
     home.sessionVariables = {
