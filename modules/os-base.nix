@@ -76,8 +76,20 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # Enable commands like nix develop
-  nix.settings.experimental-features = "nix-command flakes";
+  # nix.conf
+  nix.settings = {
+    # Enable commands like nix develop
+    experimental-features = "nix-command flakes";
+    
+    substituters = [
+        "https://novops.cachix.org"
+      ];
+    
+    trusted-public-keys = [
+      "novops.cachix.org-1:xm1fF2MoVYRmg89wqgQlM15u+2bk0LBfVktN9EgDaHY="
+    ];
+
+  };
   
   environment.systemPackages = with pkgs; [
     spotify
@@ -105,6 +117,7 @@
     dive
     gitlab-runner
     debootstrap
+    cachix
 
     # Programs
     transmission-qt
