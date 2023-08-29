@@ -21,13 +21,22 @@
     gitrbv = "git fetch && git rebase origin/dev";
 
     # Docker
-    docker-cleanup = "docker stop $(docker ps -aq) && docker rm $(docker ps -aq)";
-    docker-cleanup-hard = "docker stop $(docker ps -aq) && \ 
-      docker rm $(docker ps -aq) && \
-      docker volume rm $(docker volume ls -q) && \
-      docker network rm $(docker network ls -q)";
+    docker-cleanup = "docker stop $(docker ps -aq); docker rm $(docker ps -aq)";
+    docker-cleanup-hard = "docker stop $(docker ps -aq); \ 
+      docker rm $(docker ps -aq); \
+      docker volume rm $(docker volume ls -q); \
+      docker network rm $(docker network ls -q); \
+      docker system prune --all --volumes --force";
     
     dcr = "docker compose down -v && docker compose up -d";
+
+    # Podman
+    podman-cleanup = "podman stop $(podman ps -aq); podman rm $(podman ps -aq)";
+    podman-cleanup-hard = "podman stop $(podman ps -aq); \ 
+      podman rm $(podman ps -aq); \
+      podman volume rm $(podman volume ls -q); \
+      podman network rm $(podman network ls -q); \
+      podman system prune --all --volumes --force";
     
     # Nix
     noxb = "sudo nixos-rebuild build";
