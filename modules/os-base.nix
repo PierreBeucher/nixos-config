@@ -118,6 +118,7 @@
     gitlab-runner
     debootstrap
     cachix
+    deno
 
     # Programs
     transmission-qt
