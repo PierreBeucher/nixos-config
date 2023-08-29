@@ -37,6 +37,7 @@
     gitlab.gitlab-workflow
     streetsidesoftware.code-spell-checker
     bungcip.better-toml
+    denoland.vscode-deno
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitblame";
