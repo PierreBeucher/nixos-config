@@ -2,12 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
-
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz";
-in
-{
+{ config, pkgs, ... }: {
 
   imports =
     [ # Include the results of the hardware scan.
@@ -15,7 +10,6 @@ in
       ../../modules/os-base.nix
       ../../modules/home-manager.nix
       ../../modules/openvpn.nix
-      # (import "${home-manager}/nixos")
     ];
 
   # Bootloader.

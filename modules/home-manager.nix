@@ -1,12 +1,7 @@
-{ config, lib, pkgs,  ... }:
-
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz";
-in
-{
+{ config, lib, pkgs,  ... }: {
 
   imports = [
-    (import "${home-manager}/nixos")
+    <home-manager/nixos>
   ];
 
   # TODO username should be a parameter
@@ -80,6 +75,8 @@ in
         { id = "megbklhjamjbcafknkgmokldgolkdfig"; } # SessionBox 
       ];
     };
+
+    home.stateVersion = "22.11";
   };
 
 }
