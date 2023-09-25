@@ -30,6 +30,9 @@
   # Enable NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
 
+  # tmpfs on /tmp
+  boot.tmp.useTmpfs = true;
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
