@@ -127,6 +127,7 @@
     transmission-qt
     vlc
     libsForQt5.kolourpaint
+    activitywatch
     
     # network tools
     bind 
