@@ -25,6 +25,8 @@
         "novops"
         "hvault"
         "hashicorp"
+        "myinstance"
+        "mystaticip"
     ];
   };
 
