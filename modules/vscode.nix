@@ -27,6 +27,10 @@
         "hashicorp"
         "myinstance"
         "mystaticip"
+        "crafteo"
+        "pbeucher"
+        "nix"
+        "nixos"
     ];
   };
 
