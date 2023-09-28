@@ -122,6 +122,7 @@
     debootstrap
     cachix
     deno
+    google-cloud-sdk
 
     # Programs
     transmission-qt
