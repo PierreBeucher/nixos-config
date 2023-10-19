@@ -31,6 +31,8 @@
         "pbeucher"
         "nix"
         "nixos"
+        "Skooner"
+        "skooner"
     ];
   };
 
@@ -42,7 +44,6 @@
     redhat.vscode-yaml
     gitlab.gitlab-workflow
     streetsidesoftware.code-spell-checker
-    bungcip.better-toml
     denoland.vscode-deno
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
