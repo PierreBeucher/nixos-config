@@ -35,7 +35,6 @@
       enable = true;
       matchBlocks = {
         "localhost" = {
-          # hostname = "localhost";
           extraOptions = {
             StrictHostKeyChecking = "no";
             UserKnownHostsFile = "/dev/null";
@@ -43,7 +42,6 @@
         };
         
         "*.training.crafteo.io" = {
-          # hostname = "*.training.crafteo.io";
           extraOptions = {
             StrictHostKeyChecking = "no";
             UserKnownHostsFile = "/dev/null";
@@ -51,7 +49,13 @@
         };
 
         "dev.blog.crafteo.io" = {
-          # hostname = "*.training.crafteo.io";
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+
+        "sunshine.devops.crafteo.io" = {
           extraOptions = {
             StrictHostKeyChecking = "no";
             UserKnownHostsFile = "/dev/null";
