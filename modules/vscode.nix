@@ -33,6 +33,11 @@
         "nixos"
         "Skooner"
         "skooner"
+        "Azure"
+        "azure"
+        "cdktf"
+        "azurerm"
+        "serviceaccount"
     ];
   };
 
