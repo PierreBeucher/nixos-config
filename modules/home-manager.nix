@@ -61,6 +61,14 @@
             UserKnownHostsFile = "/dev/null";
           };
         };
+
+        "sunshine-fast.devops.crafteo.io" = {
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+
       };        
     };
 
