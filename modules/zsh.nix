@@ -81,6 +81,9 @@
     # Reset DNS cache
     resetdns = "sudo systemctl restart nscd.service";
 
+    # Moonlight via Flatpak
+    moonlight = "flatpak run com.moonlight_stream.Moonlight";
+
   };
 
 }
