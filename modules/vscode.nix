@@ -49,7 +49,7 @@
     redhat.vscode-yaml
     gitlab.gitlab-workflow
     streetsidesoftware.code-spell-checker
-    denoland.vscode-deno
+    github.copilot
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitblame";
@@ -226,10 +226,10 @@
         command = "workbench.action.terminal.focus";
         when = "!terminalFocus";
     }
-    {
-        command = "cSpell.addWordToWorkspaceDictionary";
-        key = "ctrl+shift+D";
-        when = "!terminalFocus";
-    }
+    # {
+    #     command = "cSpell.addWordToWorkspaceDictionary";
+    #     key = "ctrl+shift+D";
+    #     when = "!terminalFocus";
+    # }
   ];
 }
