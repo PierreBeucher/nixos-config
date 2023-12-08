@@ -40,6 +40,8 @@
         "serviceaccount"
     ];
 
+    "editor.inlineSuggest.enabled" = true;
+
     "github.copilot.enable" = {
         "*" = true;
         "plaintext" = false;
