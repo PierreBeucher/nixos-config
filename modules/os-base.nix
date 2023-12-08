@@ -104,24 +104,17 @@
     gnupg
     gnumake
     docker-compose
-    podman-compose
-    buildah 
     htop
     unzip
-    nixos-generators
     pulumi
     terraform
-    pkg-config
-    openssl
     sops
     jq
     ansible
     pciutils
     dive
-    gitlab-runner
     debootstrap
     cachix
-    deno
     (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin])
 
     # Programs
@@ -129,6 +122,23 @@
     vlc
     libsForQt5.kolourpaint
     activitywatch
+    
+    # Failed attempt at providing moonlight codecs
+    # nvidia-vaapi-driver
+    # x265
+    # x264
+    # nv-codec-headers-11
+    # vivaldi-ffmpeg-codecs
+    # ffmpeg-full
+    # libva
+    # libva1
+    # vaapiVdpau
+    # libvdpau-va-gl
+    # libvdpau
+    # openh264
+    # x264
+    # libde265
+    # x265
     
     # network tools
     bind 
