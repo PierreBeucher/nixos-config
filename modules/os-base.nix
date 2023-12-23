@@ -146,11 +146,13 @@
     tor-browser-bundle-bin
 
     # Rust and deps
-    rustup
-    musl
-    gcc
-    rust-analyzer
-    dive
+    # rustup
+    # rustc
+    # cargo
+    # musl
+    # gcc
+    # rust-analyzer
+    # dive
   ];
 
   programs.zsh.enable = true;
