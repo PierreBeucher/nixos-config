@@ -115,6 +115,8 @@
     dive
     debootstrap
     cachix
+    musl
+    gcc
     (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin])
 
     # Programs
@@ -149,8 +151,6 @@
     # rustup
     # rustc
     # cargo
-    # musl
-    # gcc
     # rust-analyzer
     # dive
   ];
