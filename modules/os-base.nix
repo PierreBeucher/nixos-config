@@ -124,6 +124,7 @@
     vlc
     libsForQt5.kolourpaint
     activitywatch
+    authy
     
     # Failed attempt at providing moonlight codecs
     # nvidia-vaapi-driver
