@@ -101,6 +101,12 @@
         version = "0.6.5";
         sha256 = "sha256-Aw41V1hCZ3reZRptfqFDdBef9spHjkfMngVotF2ptek=";
     }
+    {
+        name = "vscode-kubernetes-tools";
+        publisher = "ms-kubernetes-tools";
+        version = "1.3.15";
+        sha256 = "sha256-EXFE8F0ZhPcF7CxxarJzFSrZQAcNhqZL52GZCxK71vQ=";
+    }
   ];
   
   keybindings = [
