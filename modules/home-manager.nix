@@ -69,6 +69,20 @@
           };
         };
 
+        "*.dev.inair.cloud" = {
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+
+        "*.dev.inair.cloud." = {
+          extraOptions = {
+            StrictHostKeyChecking = "no";
+            UserKnownHostsFile = "/dev/null";
+          };
+        };
+
       };        
     };
 
