@@ -245,5 +245,14 @@
     #     key = "ctrl+shift+D";
     #     when = "!terminalFocus";
     # }
+    {
+        key = "ctrl+f2";
+        command = "-editor.action.changeAll";
+        when = "editorTextFocus && !editorReadonly";
+    }
+    {
+        key = "ctrl+f2";
+        command = "workbench.action.terminal.renameWithArg";
+    }
   ];
 }
