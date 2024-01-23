@@ -41,13 +41,6 @@
     ];
 
     "editor.inlineSuggest.enabled" = true;
-
-    "github.copilot.enable" = {
-        "*" = true;
-        "plaintext" = false;
-        "markdown" = false;
-        "scminput" = false;
-    };
   };
 
   extensions = with pkgs.vscode-extensions; [
@@ -57,7 +50,6 @@
     yzhang.markdown-all-in-one
     redhat.vscode-yaml
     gitlab.gitlab-workflow
-    github.copilot
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitblame";
