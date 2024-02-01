@@ -247,4 +247,84 @@
         command = "workbench.action.terminal.renameWithArg";
     }
   ];
+
+  userTasks = {
+    "version" = "2.0.0";
+    "tasks" = [
+        {
+            "type" = "shell";
+            "label" = "dev";
+            "command" = "nix develop";
+            "options" = {
+                "env" = {
+                    "NOVOPS_ENVIRONMENT" = "dev";
+                };
+            };
+            "problemMatcher" = [ ];
+            "presentation" = {
+                "echo" = false;
+                "focus" = true;
+                "showReuseMessage" = false;
+                "close" = true;
+            };
+        }
+        {
+            "type" = "shell";
+            "label" = "integ";
+            "command" = "nix develop";
+            "options" = {
+                "env" = {
+                "NOVOPS_ENVIRONMENT" = "integ";
+                };
+            };
+            "problemMatcher" = [ ];
+            "presentation" = {
+                "echo" = false;
+                "focus" = true;
+                "showReuseMessage" = false;
+                "close" = true;
+            };
+        }
+        {
+            "type" = "shell";
+            "label" = "preprod";
+            "command" = "nix develop";
+            "options" = {
+                "env" = {
+                "NOVOPS_ENVIRONMENT" = "preprod";
+                };
+            };
+            "problemMatcher" = [ ];
+            "presentation" = {
+                "echo" = false;
+                "focus" = true;
+                "showReuseMessage" = false;
+                "close" = true;
+            };
+        }
+        {
+            "type" = "shell";
+            "label" = "prod";
+            "command" = "nix develop";
+            "options" = {
+                "env" = {
+                "NOVOPS_ENVIRONMENT" = "prod";
+                };
+            };
+            "problemMatcher" = [ ];
+            "presentation" = {
+                "echo" = false;
+                "focus" = true;
+                "showReuseMessage" = false;
+                "close" = true;
+            };
+        }
+        {
+            "label" = "sauermann-novops";
+            "dependsOn" = [ "dev" "integ" "preprod" "prod" ];
+            "problemMatcher" = [];
+        }
+    ];
+  };
+
 }
