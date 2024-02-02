@@ -99,6 +99,12 @@
         version = "1.3.15";
         sha256 = "sha256-EXFE8F0ZhPcF7CxxarJzFSrZQAcNhqZL52GZCxK71vQ=";
     }
+    {
+        name = "even-better-toml";
+        publisher = "tamasfe";
+        version = "0.19.2";
+        sha256 = "sha256-JKj6noi2dTe02PxX/kS117ZhW8u7Bhj4QowZQiJKP2E=";
+    }
   ];
   
   keybindings = [
