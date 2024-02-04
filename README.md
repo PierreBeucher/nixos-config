@@ -2,7 +2,6 @@
 
 ## Setup after fresh NixOS install
 
-
 Copy auto-generated config:
 
 ```sh
@@ -36,4 +35,22 @@ sudo nixos-rebuild switch
 
 ```sh
 sudo systemctl status openvpn-expressvpn.service
+```
+
+## Upgrade
+
+```sh
+sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
+sudo nix-channel --add https://channels.nixos.org/nixos-23.11 nixos
+sudo nix-channel --update 
+sudo nixos-rebuild switch --upgrade
+```
+
+## Garbage collect
+
+```sh
+nix-env --list-generations
+nix-env --delete-generations 123
+sudo nix-store --gc
+sudo nix-collect-garbage -d
 ```
