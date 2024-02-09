@@ -19,7 +19,7 @@
       dbeaver
       sshuttle
       azure-cli
-      logseq
+      # logseq
       kubernetes-helm
     ];
 
@@ -28,6 +28,8 @@
     };
 
     programs.bash.enable = true;
+    programs.bash.bashrcExtra = lib.strings.fileContents ../files/bashrc-additional.sh;
+
     programs.zsh = import ./zsh.nix;
     programs.vscode = import ./vscode.nix { pkgs = pkgs; };
 
