@@ -128,34 +128,10 @@
     activitywatch
     authy
     
-    # Failed attempt at providing moonlight codecs
-    # nvidia-vaapi-driver
-    # x265
-    # x264
-    # nv-codec-headers-11
-    # vivaldi-ffmpeg-codecs
-    # ffmpeg-full
-    # libva
-    # libva1
-    # vaapiVdpau
-    # libvdpau-va-gl
-    # libvdpau
-    # openh264
-    # x264
-    # libde265
-    # x265
-    
     # network tools
     bind 
     traceroute
     tor-browser-bundle-bin
-
-    # Rust and deps
-    # rustup
-    # rustc
-    # cargo
-    # rust-analyzer
-    # dive
   ];
 
   programs.zsh.enable = true;
