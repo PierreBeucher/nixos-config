@@ -25,7 +25,8 @@
   users.users.pbeucher = {
     isNormalUser = true;
     description = "Pierre";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    shell = pkgs.zsh;
   };
   
   # This value determines the NixOS release from which the default
