@@ -32,6 +32,9 @@
 
   swapDevices = lib.mkForce [ ];
 
+  boot.initrd.luks.devices."luks-00ab19fa-b732-4690-8896-3ee7d8658bbc".device = "/dev/disk/by-uuid/00ab19fa-b732-4690-8896-3ee7d8658bbc";
+  boot.initrd.luks.devices."luks-00ab19fa-b732-4690-8896-3ee7d8658bbc".keyFile = "/crypto_keyfile.bin";
+
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction

@@ -66,6 +66,20 @@
     #media-session.enable = true;
   };
 
+  # Kernel configs
+  boot.kernel.sysctl = { 
+    "kernel.task_delayacct" = 1; # Allow iotop and such to get io data
+  };
+
+  services.sysstat.enable = true;
+
+  users.users.pbeucher = {
+    isNormalUser = true;
+    description = "Pierre";
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    shell = pkgs.zsh;
+  };
+
   # Allow passwordless sudo
   security.sudo.extraRules= [
     {  users = [ "pbeucher" ];
@@ -120,6 +134,8 @@
     (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin])
     usbutils
     quickemu
+    iotop
+    sysstat
 
     # Programs
     transmission-qt

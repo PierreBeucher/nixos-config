@@ -17,17 +17,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-
-  # Enable networking
-  networking.networkmanager.enable = true;
-
-  users.users.pbeucher = {
-    isNormalUser = true;
-    description = "Pierre";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
-    shell = pkgs.zsh;
-  };
+  networking.hostName = "nixos-NSAU";
   
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
