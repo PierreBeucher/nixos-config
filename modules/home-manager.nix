@@ -104,6 +104,19 @@
       ];
     };
 
+    dconf.settings = {
+        "org/gnome/settings-daemon/plugins/color" = {
+          night-light-schedule-to = 0.0;
+        };
+
+        "org/gnome/desktop/wm/keybindings" = {
+          switch-applications = "@as []";
+          switch-applications-backward = "@as []";
+          switch-windows = ["<Alt>Tab"];
+          switch-windows-backward = ["<Shift><Alt>Tab"];    
+        };
+    };
+
     home.stateVersion = "22.11";
   };
 
