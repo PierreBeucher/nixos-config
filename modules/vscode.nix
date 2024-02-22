@@ -50,6 +50,7 @@
     yzhang.markdown-all-in-one
     redhat.vscode-yaml
     gitlab.gitlab-workflow
+    editorconfig.editorconfig
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitblame";
