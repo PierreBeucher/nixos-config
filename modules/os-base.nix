@@ -41,6 +41,9 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
 
+    displayManager.autoLogin.user = "pbeucher";
+    displayManager.autoLogin.enable = true;
+
     # Configure keymap in X11
     layout = "fr";
     xkbVariant = "azerty";
