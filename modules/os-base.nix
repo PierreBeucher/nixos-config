@@ -139,6 +139,7 @@
     quickemu
     iotop
     sysstat
+    bruno
 
     # Programs
     transmission-qt
