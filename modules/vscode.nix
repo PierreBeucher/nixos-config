@@ -51,6 +51,7 @@
     redhat.vscode-yaml
     gitlab.gitlab-workflow
     editorconfig.editorconfig
+    dbaeumer.vscode-eslint
   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     {
         name = "gitblame";
